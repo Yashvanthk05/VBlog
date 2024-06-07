@@ -62,5 +62,9 @@ const UpdateBlog = () => {
     />
   )
 }
-
+const UpdateBlogPage = () => (
+  <Suspense fallback={<p>Loading...</p>}>
+    <UpdateBlog />
+  </Suspense>
+);
 export default UpdateBlog
